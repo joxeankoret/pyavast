@@ -23,4 +23,4 @@ The current bindings offer the following features:
 Contact
 =======
 
-Copyright (c) 2014 Joxean Koret, <joxeankoret AT yahoo DOT es>
+Copyright (c) 2014 Joxean Koret, &lt;joxeankoret AT yahoo DOT es&gt;

@@ -56,13 +56,16 @@ files using the method call ```check_url()```, as in the following example:
 ```
 # File: avast_url_check.py
 import sys
-import pprint
 from pyavast import CAvastInterface
 
 def main(path):
   avast = CAvastInterface()
   avast.connect()
-  pprint.pprint(avast.check_url(path))
+  if avast.check_url(path):
+    print "Good"
+  else:
+    print "Blocked"
+
 
 def usage():
   print "Usage:", sys.argv[0], "<URL to check>"
@@ -74,7 +77,7 @@ if __name__ == "__main__":
     main(sys.argv[1])
 ```
 
-As you can see, the only change with the previous example is that we're
+As you can see, the only real change with the previous example is that we're
 calling ```check_url()``` instead of ```scan_path```.
 
 Contact
